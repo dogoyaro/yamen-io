@@ -2,16 +2,28 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import styled from "styled-components"
+
+// const HeaderLink = styled(Link)`
+// color: 'white';
+// `;
+
+const HeaderLink = styled(Link)`
+  text-decoration: none;
+  color: #c29215;
+`
+
+const Spaceline = () => <span> | </span>;
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
+        margin: `0 2rem`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
@@ -20,13 +32,20 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `#4e9a06`,
             textDecoration: `none`,
           }}
         >
           {siteTitle}
         </Link>
       </h1>
+      <h4 style={{ margin: 0, marginTop: 10, padding: 2, color: "#807c65" }}>
+        <HeaderLink href="/">blog</HeaderLink>
+        <Spaceline />
+        <HeaderLink href="/">resume</HeaderLink>
+        <Spaceline />
+        <HeaderLink href="/">projects</HeaderLink>
+      </h4>
     </div>
   </header>
 )
@@ -39,4 +58,5 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
+// <span style={{ color: "#D3D7CF", fontWeight: "bold" }}>|</span>
 export default Header

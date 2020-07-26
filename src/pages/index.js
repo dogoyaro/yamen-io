@@ -1,21 +1,28 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import ReactTypingEffect from 'react-typing-effect';
+
+const BlinkingCursor = () => (
+  <ReactTypingEffect
+    typingDelay="1000s"
+    text=""
+    style={{ color: "#D3D7CF", fontWeight: "bold" }}
+  />
+)
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <h1>Hi!</h1>
+    <h2 style={{ marginTop: '50px' }}>
+      Yamen: The greatest thing since sliced bread. I will build the heck out of
+      your project. Hit me up! or check out <a href="/">some of the stuff</a> I
+      am doing.
+      <BlinkingCursor />
+    </h2>
+    <p></p>
   </Layout>
 )
 
