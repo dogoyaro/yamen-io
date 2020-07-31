@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { URLS }  from '../constants';
 
 import styled from "styled-components"
 
@@ -40,11 +41,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <h4 style={{ margin: 0, marginTop: 10, padding: 2, color: "#807c65" }}>
-        <HeaderLink href="/">blog</HeaderLink>
+        <HeaderLink href={URLS.BLOG} target="_blank">blog</HeaderLink>
         <Spaceline />
-        <HeaderLink href="/">resume</HeaderLink>
+        <HeaderLink href={URLS.RESUME} target="_blank">resume</HeaderLink>
         <Spaceline />
-        <HeaderLink href="/">projects</HeaderLink>
+        <HeaderLink href={URLS.PROJECTS} target="_blank">projects</HeaderLink>
       </h4>
     </div>
   </header>

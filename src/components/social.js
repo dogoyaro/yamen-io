@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon as FaIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import styled from "styled-components"
+import { URLS } from '../constants';
 
 const SocialIcon = styled(FaIcon)`
   margin: 15px;
@@ -21,13 +22,13 @@ const SocialIconLink = styled(Link)`
 const Social = () => {
     return (
       <h2>
-        <SocialIconLink href='/'>
+        <SocialIconLink href={URLS.PROJECTS} target="_blank">
           <SocialIcon icon={faGithub} />
         </SocialIconLink>
-        <SocialIconLink href='/'>
+        <SocialIconLink href={URLS.LINKEDIN} target="_blank">
           <SocialIcon icon={faLinkedin} />
         </SocialIconLink>
-        <SocialIconLink href='/'>
+        <SocialIconLink href={URLS.TWITTER} target="_blank">
           <SocialIcon icon={faTwitter} />
         </SocialIconLink>
       </h2>
