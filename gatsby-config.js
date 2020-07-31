@@ -1,13 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `yamen.`,
-    description: `Changing the world one line of code at a time.`,
-    author: `@gatsbyjs`,
+    description: `Osayamen Osaretin - Personal website and blog`,
+    author: `@za_yams`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
