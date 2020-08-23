@@ -18,4 +18,5 @@ jobs:
                   USERNAME: ${{ secrets.DIGITAL_OCEAN_USER }}
                   PORT: ${{ secrets.DIGITAL_OCEAN_PORT }}
                   KEY: ${{ secrets.DIGITAL_OCEAN_SSHKEY }}
+                  PASSPHRASE: ${{ secrets.DIGITAL_OCEAN_SSHKEY_PASSPHRASE }}
                   script: ./update_container.sh
