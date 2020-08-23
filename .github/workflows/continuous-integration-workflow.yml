@@ -19,3 +19,21 @@ jobs:
                   repository: osayamen/yamen-io
                   tag: latest
                   push: ${{ startsWith(github.ref, 'refs/tags/') }}
+
+    deploy:
+        needs: build
+        name: Deploy
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Restart Docker container
+              uses: appleboy/ssh-action@master
+              with:
+                  host: ${{ secrets.DIGITAL_OCEAN_HOST }}
+                  USERNAME: ${{ secrets.DIGITAL_OCEAN_USER }}
+                  PORT: ${{ secrets.DIGITAL_OCEAN_PORT }}
+                  KEY: ${{ secrets.DIGITAL_OCEAN_SSHKEY }}
+                  PASSPHRASE: ${{ secrets.DIGITAL_OCEAN_SSHKEY_PASSPHRASE }}
+                  script: ./update_container.sh 
