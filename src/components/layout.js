@@ -38,7 +38,9 @@ const Layout = ({ children }) => {
       </div>
       <footer
         style={{
-          margin: `12.5rem 2rem`,
+          // margin: `20.5rem 2rem`,
+          marginTop: `20.5rem`,
+          marginLeft: `2rem`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
