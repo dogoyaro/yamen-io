@@ -9,5 +9,6 @@ linkedin: https://www.linkedin.com/osaretinosayamen
 github: https://github.com/dogoyaro
 ---
 
-I am working on interesting challenges bringing humane automation to enterprise software as a part of the [Matterway](http://www.matterway.io) team.
+I am working on interesting challenges related to bringing humane automation to enterprise software as a part of the [Matterway](http://www.matterway.io) team.
+
 Nevertheless, I am passionate about sport, photography, and a growing list of other interests I barely have the time for.
