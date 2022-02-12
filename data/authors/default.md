@@ -1,16 +1,13 @@
 ---
-name: Tails Azimuth
+name: Osayamen Osaretin
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+occupation: Software Developer
+company:
+email: osaretinosayamen@gmail.com
+twitter: https://twitter.com/za.yams
+linkedin: https://www.linkedin.com/osaretinosayamen
+github: https://github.com/dogoyaro
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
-
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am working on interesting challenges bringing humane automation to enterprise software as a part of the [Matterway](http://www.matterway.io) team.
+Nevertheless, I am passionate about sport, photography, and a growing list of other interests I barely have the time for.
